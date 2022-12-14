@@ -10,17 +10,36 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Conference Template</title>
+    <style>
+    .border-box {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 33%;
+      padding: 5px;
+    }
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .centered-and-cropped {
+        object-fit: cover;
+        border-radius:50%;
+    }
+    </style>
 </head>
 
 <body>
-
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+        <img src="assets/banner.jpg" style="width:100%;" alt="Conference Template Banner">
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+                <span class="title1">Autonomous Agents</span> <span class='year'>for</span> <span class="title2">Social Good</span> <span class="year">2022</span>
         </div>
         <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+	    May 10th 3-6 Auckland time (May 9th 11-14 ET) <br> Virtual
         </div>
     </div>
 
@@ -30,72 +49,84 @@
                 <a class="current" title="Conference Home Page" href=".">Home</a>
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a title="Call for Papers" href="call">Call for Papers</a>
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a title="Keynote Information" href="keynotes">Keynotes</a> 
             </td>
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Program" href="program">Program</a>
             </td>
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Workshop Organization" href="organization">Organization</a>
             </td>
         </tr>
     </table>
 
-    <h2>What is This Website?</h2>
+    <br>
+
+    <h4>News</h4>
+        <ul>
+            <li> [<span style="color:red;">New!! May 5th</span>] The <a href="https://forms.gle/RTGXR2DnQdDgxHEc6">registration</a> is open and completely free!! Please register to receive the meeting information and we will send a reminder prior to the workshop start time to all the participants. Look forward to seeing you all soon.</li>
+            <li> [Apr 28th 2022] The <a href="program">workshop schedule</a> is announced and it is <span style="color:red;">FREE</span> for all participants!!</li>
+    		<li> [Apr 18th 2022] The workshop is scheduled on May 10th 3-6 Auckland time (May 9th 11-14 ET) </li>
+	    	<li> [Mar 8th 2022] The acceptance notification will be announced on <strong <style="color:red;">March 13th, 2022 AOE</strong>. We are working on collecting feedback from our program committees and will announce the decision soon. We sincerely appologize for any delay in notification. </li>
+		    <li> [Feb 2nd 2022] The submission deadline is extended to <strong <style="color:red;">February 19th, 2022 AOE</strong>. Please refer to <a href="call">call for papers</a> for more details! </li>
+    		<li> [Feb 1st 2022] The workshop has no archival proceedings. We welcome both preliminary works and published works with interesting finding to submit to the workshop! </li>
+	    	<li> [Dec 14th 2021] Submission is open from now until <strike>January 30th, 2022 AOE</strike>. </li>
+		    <li> [Dec 13th 2021] The workshop will be held virtually with AAMAS 2022. </li>
+        </ul>
+
+    <h4>Workshop Introduction</h4>
+
     <p>
-        This website is a template that you could use for a (small) academic conference. 
-        It&rsquo;s got a page for registration, where you can embed a Google Form or some other way for participants to register.
-        It&rsquo;s got a program page to list the schedule for the conference.
-        It&rsquo;s got a directions page to add a bunch of instructions how to get to the conference.
-        It&rsquo;s got a page to put up the flyers and other promotional materials for folks to download.
+    This is the official website of the 3rd International Workshop on Autonomous Agents for Social Good (AASG) 2022, which is co-located with <a target="_blank" href="https://aamas2022-conference.auckland.ac.nz/">AAMAS 2022</a>.
     </p>
     <p>
-        You can use this template by cloning all the files from this
-        <a target="_blank" href="https://github.com/mikepierce/conference-website-template">GitHub repo here</a>.
-        This template was created from a website I made for 
-        <a target="_blank" href="http://math.ucr.edu/~mathconn/">MathConnections 2019</a>,
-        in case you want to see an example of this template being used in the wild.
-    </p>
-    <p>
-        This paragraph is just some filler text to give the homepage some volume:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+    	This workshop aims to highlight the role of multi-agent systems (MAS) in social challenges. The goal of this workshop is to identify new MAS problems in the social domain, develop novel MAS solutions to resolve social challenges, and learn from the real-world deployment of MAS solutions in societies. This workshop expects to broaden the focus of MAS in social challenges and increase the diversity of MAS research.
     </p>
 
-    <h2>Organizers</h2>
     <p>
-        Here&rsquo;s a good place to list the organizers and sponsors of the conference,
-        as well as list contact information for the organizers,
-        and show off the logos of the sponsors.
-        It looks like his conference was sponsored by kittens!
+        We are working on inviting NGOs (non-government organizations) from New Zealand and other countries to share the social challenges faced by different parts of the world. We believe the engagement with practitioners and stakeholders is the best way to push research in social good forward. This workshop aims to provide an opportunity for MAS researchers to exchange ideas and solutions with NGOs to tackle social challenges.
     </p>
-    <table class="sponsors">
+    <p>
+        Some social challenges of interests include but not limited to: public health, conservation, and human right. Please see <a href='call'>call for papers</a> for more details.
+    </p>
+
+    <div class="row border-box">
+        <div class="column border-box">
+            <center>
+            <figure>
+                <img class="centered-and-cropped" src="assets/health.jpg" alt="Public Health" style="width:90%">
+                <figcaption>Public Health</figcaption>
+            </figure>
+            </center>
+        </div>
+        <div class="column border-box">
+            <center>
+            <figure>
+                <img class="centered-and-cropped" src="assets/conservation.jpg" alt="Conservation" style="width:90%">
+                <figcaption>Conservation</figcaption>
+            </figure>
+            </center>
+        </div>
+        <div class="column border-box">
+            <center>
+            <figure>
+                <img class="centered-and-cropped" src="assets/human-right.jpg" alt="Human Right" style="width:90%">
+                <figcaption>Human Right</figcaption>
+            </figure>
+            </center>
+        </div>
+    </div>
+
+    <table class="footer">
         <tr>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten1.jpg" alt="First Sponsor Name">
-                </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten2.jpg" alt="Second Sponsor Name" style="width: 80%">
-                </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten3.jpg" alt="Third Sponsor Name">
-                </a>
-            </td>
+            <td class="footer">Design by <a target="_blank" href="http://math.ucr.edu/~mpierce/">Mike Pierce</a></td> 
+            <td class="footer">&copy; AAMAS 2022</td> 
         </tr>
     </table>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
-
-</body>
+    </body>
 </html>
 
